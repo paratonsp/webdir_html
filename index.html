@@ -6,17 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
         <!-- Style -->
+        <script src="assets/jquery.min.js"></script>
+        <script src="assets/script.js"></script>
         <script src="https://cdn.tailwindcss.com" defer></script>
-        <link rel="preconnect" href="../../assets/swap.css">
-        <link rel="preload" href="../../assets/all.min.css"></link>
-        <link rel="stylesheet" href="../../assets/styles.css">
+        <script id="dynamicJSONLD" type="application/ld+json"></script>
+        <link rel="preconnect" href="assets/swap.css">
+        <link rel="preload" href="assets/all.min.css"></link>
+        <link rel="stylesheet" href="assets/styles.css">
     </head>
     <body class="bg-gray-100">
         <div class="max-w-2xl mx-auto py-10">
             <div class="bg-white shadow rounded-lg p-6">
                 <div class="mb-4">
                     <h1 class="text-xl font-semibold">Website Directory</h1>
+                    <a class="cusCard" rel="noopener" target="_blank" href="https://websitedirectory.pages.dev/">Cloudflare Website Directory</a>
+                    <a class="cusCard" rel="noopener" target="_blank" href="https://websitedirectory.vercel.app/">Vercel Website Directory</a>
+                    <a class="cusCard" rel="noopener" target="_blank" href="https://websitedirectory.netlify.app/">Netlify Website Directory</a>
                 </div>
+                </br>
                 <div class="space-y-3">
                     <a class="cusCard" rel="noopener" target="_blank" href="https://suryaindomakmur.com">Surya Indo Makmur | Panel Listrik</a>
                     <a class="cusCard" rel="noopener" target="_blank" href="https://pesoros.com">Pesoros | Web & Mobile Developer</a>
@@ -24,4 +31,21 @@
             </div>
         </div>
     </body>
+    <script>
+        $(document).ready(function(){
+            var base_url = window.location.origin;
+            data = {
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "url": base_url,
+                        "name": "Website Directory"  
+                    };
+
+            var script = document.createElement('script');
+            script.type = "application/ld+json";
+            script.innerHTML = JSON.stringify(data);
+            $("#dynamicJSONLD").html(JSON.stringify(data));
+        });
+    </script>
+
 </html>
