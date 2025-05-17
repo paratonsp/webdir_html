@@ -10,7 +10,23 @@
         <script src="assets/jquery.min.js"></script>
         <script src="assets/script.js"></script>
         <script src="https://cdn.tailwindcss.com" defer></script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Website Directory","url":"https://websitedirectory.pages.dev"}</script>
+        <script type="application/ld+json">
+            {
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "Bootstrap Creative",
+            "alternateName" : "BootstrapCreative",
+            "url" : "https://bootstrapcreative.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://bootstrapcreative.com/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+            }
+            }
+        </script> 
         <!-- Style -->
         <link rel="preconnect" href="assets/swap.css">
         <link rel="preload" href="assets/all.min.css"></link>
