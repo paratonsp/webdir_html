@@ -1,0 +1,39 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+.tag-present {
+    background-color: #C6F6D5;
+    color: #276749;
+    border-radius: 9999px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.tag-absent {
+    background-color: #FED7D7;
+    color: #C53030;
+    border-radius: 9999px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.cusCard {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+    padding: 0.5rem 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+    border-radius: 0.25rem;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+    flex: 1 1 0;
+}
