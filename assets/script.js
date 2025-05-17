@@ -10,5 +10,5 @@ $(document).ready(function () {
     var script = document.createElement('script');
     script.type = "application/ld+json";
     script.innerHTML = JSON.stringify(data);
-    $("#dynamicJSONLD").html(JSON.stringify(data));
+    $("#json-ld").html(JSON.stringify(data));
 });
