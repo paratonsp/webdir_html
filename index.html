@@ -5,11 +5,12 @@
         <meta name="description" content="Website Directory for Local Business">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-        <!-- Style -->
+        <!-- Script -->
+        <script type="application/ld+json" id="json-ld"></script>
         <script src="assets/jquery.min.js"></script>
         <script src="assets/script.js"></script>
         <script src="https://cdn.tailwindcss.com" defer></script>
-        <script id="dynamicJSONLD" type="application/ld+json"></script>
+        <!-- Style -->
         <link rel="preconnect" href="assets/swap.css">
         <link rel="preload" href="assets/all.min.css"></link>
         <link rel="stylesheet" href="assets/styles.css">
@@ -31,21 +32,4 @@
             </div>
         </div>
     </body>
-    <script>
-        $(document).ready(function(){
-            var base_url = window.location.origin;
-            data = {
-                        "@context": "https://schema.org",
-                        "@type": "WebSite",
-                        "url": base_url,
-                        "name": "Website Directory"  
-                    };
-
-            var script = document.createElement('script');
-            script.type = "application/ld+json";
-            script.innerHTML = JSON.stringify(data);
-            $("#dynamicJSONLD").html(JSON.stringify(data));
-        });
-    </script>
-
 </html>

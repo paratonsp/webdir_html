@@ -1,11 +1,14 @@
-jQuery(function() {
-    console.log('pppppp');
+$(document).ready(function () {
     var base_url = window.location.origin;
-    var el = document.createElement('script');
-    el.type = 'application/ld+json';
-    el.text = JSON.stringify(
-        {"@context": "https://schema.org", "@type": "WebSite", "name": "Website Directory", "url": base_url}
-    );
+    data = {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Website Directory",
+      "url" : base_url
+    };
 
-    document.querySelector('head').appendChild(el);
-})
+    var script = document.createElement('script');
+    script.type = "application/ld+json";
+    script.innerHTML = JSON.stringify(data);
+    $("#dynamicJSONLD").html(JSON.stringify(data));
+});
