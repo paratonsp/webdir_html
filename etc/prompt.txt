@@ -1,0 +1,7 @@
+tolong buatkan saya artikel dan masukkan kedalam [Artikel] pada file template.html
+dan masukkan code di file list-url.txt yang natural kedalam artikel
+masukkan keyword ke [Keyword] dalam file template.html
+minimal 2500 kata
+buat nama file menjadi index.html
+topik yang lagi viral
+tambahkan h1,h2,h3

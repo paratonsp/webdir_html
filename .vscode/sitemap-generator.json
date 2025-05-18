@@ -1,0 +1,77 @@
+{
+  "pages_sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "websitedirectory.pages.dev",
+    "Root": "./",
+    "IncludeExt": [
+      ".html",
+      ".php"
+    ],
+    "Exclude": [
+      "googlee755231c8f467ac0.html",
+      "etc/*"
+    ],
+    "TagsToInclude": [
+      "priority",
+      "lastmod",
+      "changefreq"
+    ],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": true,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": true,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  },
+  "vercel_sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "websitedirectory.vercel.app",
+    "Root": "./",
+    "IncludeExt": [
+      ".html",
+      ".php"
+    ],
+    "Exclude": [
+      "googlee755231c8f467ac0.html",
+      "etc/*"
+    ],
+    "TagsToInclude": [
+      "priority",
+      "lastmod",
+      "changefreq"
+    ],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": true,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": true,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  },
+  "netlify_sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "websitedirectory.netlify.app",
+    "Root": "./",
+    "IncludeExt": [
+      ".html",
+      ".php"
+    ],
+    "Exclude": [
+      "googlee755231c8f467ac0.html",
+      "etc/*"
+    ],
+    "TagsToInclude": [
+      "priority",
+      "lastmod",
+      "changefreq"
+    ],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": true,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": true,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  }
+}
