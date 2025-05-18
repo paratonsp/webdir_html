@@ -1,3 +1,6 @@
 User-agent: *
-Allow: /
 Disallow:
+
+Sitemap: https://websitedirectory.pages.dev/pages_sitemap.xml
+Sitemap: https://websitedirectory.vercel.app/vercel_sitemap.xml
+Sitemap: https://websitedirectory.netlify.app/netlify_sitemap.xml
